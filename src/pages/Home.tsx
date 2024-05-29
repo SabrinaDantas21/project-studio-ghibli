@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div style={ { backgroundColor: 'aquamarine', padding: '20px' } }>
       <Header />
-      <h1>Films</h1>
+      <h1 style={ { textAlign: 'center', color: 'lightseagreen' } }>Films</h1>
       <ul
         style={ {
           listStyleType: 'none',
