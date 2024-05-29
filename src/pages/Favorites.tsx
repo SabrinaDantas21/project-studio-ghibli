@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { BsSuitHeartFill } from 'react-icons/bs';
+import { FaHeartBroken } from 'react-icons/fa';
 import { FilmContext } from '../context/FilmsContext';
 import Header from '../components/Header';
 
@@ -29,7 +29,6 @@ export default function Favorites() {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '16px',
-          justifyContent: 'center',
         } }
       >
         {favoriteFilms.map((film) => (
@@ -63,8 +62,9 @@ export default function Favorites() {
               onClick={ () => toggleFavorite(film.id) }
               style={ { background: 'none', border: 'none', cursor: 'pointer' } }
             >
-              <BsSuitHeartFill
-                style={ { width: '30px', height: '30px', color: 'darkmagenta' } }
+              Remove
+              <FaHeartBroken
+                style={ { width: '30px', height: '30px', color: 'darkslategrey' } }
               />
               {' '}
             </button>

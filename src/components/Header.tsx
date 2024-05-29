@@ -12,10 +12,9 @@ export default function Header() {
       />
       {pathname === '/favorites' ? (
         <Link to="/" style={ { display: 'contents' } }>
-          <p style={ { color: 'darkslategrey' } }>Home</p>
           <FaHome
             style={ {
-              width: '30px', height: '30px', color: 'darkturquoise' } }
+              width: '40px', height: '50px', color: 'darkturquoise', padding: '5px' } }
           />
         </Link>
       ) : (

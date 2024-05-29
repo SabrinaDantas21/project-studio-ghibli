@@ -63,11 +63,11 @@ export default function Home() {
             >
               {isFavorite(film.id) ? (
                 <BsSuitHeartFill
-                  style={ { width: '30px', height: '30px', color: 'darkmagenta' } }
+                  style={ { width: '30px', height: '30px', color: 'tomato' } }
                 />
               ) : (
                 <BsSuitHeartFill
-                  style={ { width: '30px', height: '30px', color: 'gray' } }
+                  style={ { width: '30px', height: '30px', color: 'khaki' } }
                 />
               )}
             </button>
